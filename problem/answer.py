@@ -29,11 +29,11 @@ challenge_sampling = ChallengeSampling()
 #The idea for the ansatz was taken from https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.032419
 #The decomposition of the XXPlusYY gate and the ZZ gates were taken from the Qiskit Documentation https://github.com/Qiskit
 import numpy as np
-from qiskit_nature.second_q.operators import FermionicOp
+'''from qiskit_nature.second_q.operators import FermionicOp
 from qiskit_nature.second_q.mappers import JordanWignerMapper,BravyiKitaevMapper
 from qiskit.circuit import QuantumCircuit, ParameterVector, QuantumRegister
 from qiskit.circuit.library import SwapGate, XXPlusYYGate
-from qiskit.quantum_info.operators import Operator
+from qiskit.quantum_info.operators import Operator'''
 
 
 
@@ -203,7 +203,7 @@ class RunAlgorithm:
             param hamiltonian_directory: directory where hamiltonian data file exists
             return: calculated energy.
         """
-        n_qubits = 4
+        n_qubits = 28
         ham = problem_hamiltonian(n_qubits, seed, hamiltonian_directory)
 
         ####################################
